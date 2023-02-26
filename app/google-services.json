@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "155624722204",
+    "project_id": "attend-8c816",
+    "storage_bucket": "attend-8c816.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155624722204:android:97e3064f413802782074d9",
+        "android_client_info": {
+          "package_name": "com.attend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155624722204-31eb7ljdej1jfa88hgugtu7n86ioirc0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.attend",
+            "certificate_hash": "93c303753b2f40d2a14577687243d9cb8d9940cb"
+          }
+        },
+        {
+          "client_id": "155624722204-3p7nhteo2hvng25c28ptrkh0pilqh62u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.attend",
+            "certificate_hash": "3a7dd3aed5fabc39f66e5b185e50c4cddf1f943d"
+          }
+        },
+        {
+          "client_id": "155624722204-tuuh7ec33jhehobp8os47f108h96omci.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkb7ERW39JqnPj3ZHIZS4g6cNN8Rb_tJI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "155624722204-tuuh7ec33jhehobp8os47f108h96omci.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

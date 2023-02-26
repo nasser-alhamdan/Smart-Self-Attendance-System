@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_lectues"
+        android:enabled="true"
+        android:icon="@drawable/icon_lectures"
+        android:title="@string/lectures" />
+    <item
+        android:id="@+id/item_subjects"
+        android:enabled="true"
+        android:icon="@drawable/icon_subjects"
+        android:title="@string/subjects" />
+    <item
+        android:id="@+id/item_settings"
+        android:enabled="true"
+        android:icon="@drawable/icon_settings"
+        android:title="@string/settings" />
+</menu>

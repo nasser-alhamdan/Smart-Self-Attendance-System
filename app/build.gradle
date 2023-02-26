@@ -1,0 +1,75 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+
+    id 'kotlin-kapt'
+    // To use data binding annotations in Kotlin, apply the 'kotlin-kapt' plugin in your module's build.gradle
+}
+
+android {
+    namespace 'com.attend'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.attend"
+        minSdk 23
+        targetSdk 33
+        versionCode 9
+        versionName "1.09"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        release {
+            storeFile file('attend_key.jks')
+            storePassword 'AttendKey123'
+            keyAlias 'key0'
+            keyPassword 'AttendKey123'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    // firebase
+    implementation platform('com.google.firebase:firebase-bom:31.1.1')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-firestore-ktx'
+    implementation 'com.google.firebase:firebase-messaging-ktx'
+
+    // multi-dex and Gson
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.google.code.gson:gson:2.9.0'
+
+    implementation 'com.android.databinding:viewbinding:7.4.0'
+    implementation 'com.android.support:appcompat-v7:33.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+
+    // QR
+    implementation 'com.github.yuriy-budiyev:code-scanner:2.1.2'
+
+}
